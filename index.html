@@ -9,87 +9,88 @@ Workshop    : html-form
 <html>
 
     <head>
-        <title><Netkung</b></title>
+        <title>Netkung</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
         
-        <body>
+    <body>
             
             <h1>Workshop #html-form</h1>
 
-            <table>
+            <table width="30%">
+            
                 <tr>
+                    <td><label for="name">ชื่อ</label></td>  
                     <td>
-                        <label for="fname">ชื่อ:</label>
-                        <input type="text" id="fname" name="fname"><br><br>
+                        <br><input type="text" id="fname" name="fname"><br>
                     </td>
                 </tr>
 
                 <tr>
+                    <td><label for="lname">นามสกุล:</label></td>
                     <td>
-                        <label for="lname">นามสกุล:</label>
-                        <input type="text" id="lname" name="lname"><br><br>
+                        <br><input type="text" id="lname" name="lname"><br>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><label for="birthday">วัน/เดือน/ปีเกิด:</label></td>
+                    <td>
+                        <br><input type="date" id="birthday" name="birthday"><br><br>
                     </td>
                 </tr>
 
                 <tr>
+                    <td><label for="age">อายุ:</label></td>
                     <td>
-                        <label for="birthday">วัน/เดือน/ปีเกิด:</label>
-                        <input type="date" id="birthday" name="birthday"><br><br>
+                            <input type="text" id="age" name="age"><br>
                     </td>
                 </tr>
 
                 <tr>
+                    <td><label for="sex">เพศ:</label></td>
                     <td>
-                        <label for="age">อายุ:</label>
-                        <input type="text" id="age" name="age"><br><br>
+                        <br><label for="Man"><input type="radio" id="man" name="sex" value="Man"> ชาย</label>
+                            <label for="Woman"><input type="radio" id="Woman" name="sex" value="Woman"> หญิง</label><br><br>
                     </td>
                 </tr>
 
                 <tr>
+                    <td><label for="image">รูป:</label><br><br></td>
                     <td>
-                        <label for="sex">เพศ:</label>
-                        <label for="Man"><input type="radio" id="man" name="sex" value="Man"> ชาย</label>
-                        <label for="Woman"><input type="radio" id="Woman" name="sex" value="Woman"> หญิง</label><br>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label for="image">รูป:</label>
                         <input type="file" id="img" name="img" accept="image/*"><br><br>
                     </td>
                 </tr>
 
                 <tr>
+                    <td><label for="live">ที่อยู่: </label></td>
                     <td>
-                        <label for="live">ที่อยู่: </label>
                         <textarea id="live" name="live" rows="3" cols="30"></textarea><br><br>
                     </td>
                 </tr>
 
                 <tr>
+                    <td><label for="colorPicker">สีที่ชอบ:</label></td>
                     <td>
-                        <label for="colorPicker">สีที่ชอบ:</label>
-                        <input type="color" id="colorPicker" name="colorPicker" value="#ff0000"><br><br>
+                        <input type="color" id="colorPicker" name="colorPicker" value="#ff0000">    
                     </td>
                 </tr>
             
                 <tr>
-                    <td>
-                        <label for="song">แนวเพลงที่ชอบ:</label>
+                    <td><label for="song">แนวเพลงที่ชอบ:</label></td>
+                    <td><br><br><br>
                         <label for="html"><input type="radio" id="song1" name="song" value="song"> เพื่อชีวิต</label>
                         <label for="html"><input type="radio" id="song2" name="song" value="song"> ลูกทุ่ง</label>
                         <label for="html"><input type="radio" id="song3" name="song" value="song"> อื่นๆ</label><br><br>
-                        <label for="vehicle1"><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> ยินยอมให้เก็บข้อมูล</label><br>
+                        <label for="vehicle1"><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">ยินยอมให้เก็บข้อมูล</label><br><br>
                     </td>
                 </tr>
  
                 <tr>
-                    <td>
-                        <input type="reset" value="Reset"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" value="Submit">
+                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <input type="reset" value="Reset">
                     </td>
+                    <td><input type="submit" value="Submit"></td>
                 </tr>
             
         </table>
